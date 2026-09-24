@@ -1,3 +1,5 @@
+# File: validasi_klasifikasi_nilai.py
+# Author: Jihan Fithriyyah (2225250155)
 # Praktik 1: Validasi dan Klasifikasi Nilai Akhir Mahasiswa
 print("Validasi dan Klasifikasi Nilai Akhir")
 
