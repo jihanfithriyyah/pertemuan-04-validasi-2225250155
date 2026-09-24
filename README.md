@@ -38,3 +38,6 @@ python3 praktik/validasi_klasifikasi_nilai.py
 
 ## Refleksi
 Penerapan validasi tipe dan rentang di awal program (guard clause) membantu mencegah terjadinya runtime error dan memastikan data yang diolah pada perhitungan nilai akhir serta penentuan predikat sudah benar-benar valid.
+
+---
+*Dokumentasi ini dibuat untuk memenuhi tugas Pertemuan 04 Praktikum Algoritma dan Pemrograman.*
