@@ -1,13 +1,43 @@
-# Pertemuan 04 Seleksi Multi-Kondisi dan Validasi Input
+# Pertemuan 04 – Seleksi Multi-Kondisi dan Validasi Input
 
-Nama: Jihan Fithriyyah  
-NIM: 2225250155  
-Kelas: 3A  
+## Identitas
+Nama  : Jihan Fithriyyah  
+NIM   : 2225260001  
+Kelas : S1 Pendidikan Matematika FKIP Untirta  
 
 ## Tujuan
-Membangun program validasi dan klasifikasi dengan rantai if-elif-else.
+Repositori ini berisi latihan Python tentang seleksi multi-kondisi (if-elif-else) dan validasi input (tipe, rentang, domain).
 
-## Cara Menjalankan
-```bash
-python3 praktik/validasi_klasifikasi_nilai.py
-Tabel KeputusanKategoriSyarat KodeContoh MasukanKeluaran DiharapkanAakhir >= 8590, 80, 95Predikat A, LulusBakhir >= 7075, 70, 85Predikat B, LulusCakhir >= 6060, 60, 80Predikat C, LulusDakhir >= 5055, 50, 90Predikat D, Belum lulusEselain di atas40, 30, 100Predikat E, Belum lulusHasil PengujianUjianTugasKehadiranKeluaran DiharapkanKeluaran AktualStatus908095Nilai akhir 86.00, Predikat A, LulusNilai akhir 86.00, Predikat A, LulusSesuai757085Nilai akhir 73.00, Predikat B, LulusNilai akhir 73.00, Predikat B, LulusSesuai606080Nilai akhir 60.00, Predikat C, LulusNilai akhir 60.00, Predikat C, LulusSesuai555090Nilai akhir 53.00, Predikat D, Belum lulusNilai akhir 53.00, Predikat D, Belum lulusSesuai4030100Nilai akhir 36.00, Predikat E, Belum lulusNilai akhir 36.00, Predikat E, Belum lulusSesuai909075Status: Tidak memenuhi syarat kehadiranStatus: Tidak memenuhi syarat kehadiranSesuai1058090Pesan penolakan rentang nilai ujianMasukan ditolak: nilai ujian di luar rentang 0 sampai 100Sesuai80-590Pesan penolakan rentang nilai tugasMasukan ditolak: nilai tugas di luar rentang 0 sampai 100Sesuai8080abcPesan penolakan tipeMasukan ditolak: seluruh data harus berupa angkaSesuaiRefleksiPenggunaan try-except dan rantai if-elif-else sangat membantu memastikan data yang diinput pengguna benar-benar valid sebelum diproses ke perhitungan akhir.
+## Struktur Folder
+pertemuan-04-validasi-NIM/  
+├── README.md  
+├── latihan/  
+│   ├── 01_predikat_nilai.py  
+│   ├── 02_kategori_bilangan.py  
+│   ├── 03_validasi_rentang.py  
+│   ├── 04_validasi_tipe.py  
+│   └── 05_klasifikasi_segitiga_sudut.py  
+└── praktik/  
+    └── validasi_klasifikasi_nilai.py  
+
+## Tabel Keputusan – Predikat Nilai
+| Kategori | Syarat Kode       | Contoh Masukan | Keluaran Diharapkan |
+|----------|------------------|----------------|---------------------|
+| A        | nilai >= 85       | 85, 100        | A                   |
+| B        | nilai >= 70       | 70, 84.9       | B                   |
+| C        | nilai >= 60       | 60, 69.9       | C                   |
+| D        | nilai >= 50       | 50, 59.9       | D                   |
+| E        | selain di atas    | 0, 49.9        | E                   |
+
+## Tabel Pengujian
+| Masukan | Keluaran Diharapkan | Keluaran Aktual | Status |
+|---------|---------------------|-----------------|--------|
+| 92      | Predikat A          | A               | ✔      |
+| 85      | Predikat A          | A               | ✔      |
+| 84.9    | Predikat B          | B               | ✔      |
+| 49.9    | Predikat E          | E               | ✔      |
+| -1      | Pesan penolakan     | Ditolak         | ✔      |
+| abc     | Pesan penolakan     | Ditolak         | ✔      |
+
+## Refleksi
+Program berhasil menangani seluruh kondisi sesuai spesifikasi: validasi tipe, rentang, dan domain berjalan, serta klasifikasi nilai menghasilkan predikat yang benar.
